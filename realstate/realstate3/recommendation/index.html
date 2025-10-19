@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LUGAR - Personalized Property Recommendations</title>
+    <!--[if mso]>
+    <style type="text/css">
+    body, table, td, h1, h2, h3, p, a {font-family: Arial, sans-serif !important;}
+    </style>
+    <![endif]-->
+    <style type="text/css">
+        /* Client-specific Resets */
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 600px) {
+            .email-container { width: 100% !important; max-width: 100% !important; }
+            /* Property Card Stacking */
+            .property-card { display: block !important; width: 100% !important; max-width: 100% !important; margin-bottom: 25px !important; }
+            .card-content { padding: 15px !important; }
+            .card-image img { height: auto !important; }
+            /* Footer Stacking */
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                padding-bottom: 10px !important; /* Add space between stacked items */
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f0f2f5;">
+    <center>
+        <!--[if mso | IE]>
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+        <tr>
+        <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+        <![endif]-->
+        <div style="max-width:600px; margin: 0 auto;" class="email-container">
+
+            <!-- BEGIN MAIN TABLE WRAPPER -->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                
+                <!-- SECTION 1: HEADER & PERSONALIZED GREETING -->
+                <tr>
+                    <td style="background-color: #ffffff; padding: 30px 30px 20px 30px; border-radius: 8px 8px 0 0; font-family: Arial, sans-serif;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                            <tr>
+                                <td align="left" style="font-size: 20px; font-weight: bold; color: #192534; text-transform: uppercase; letter-spacing: 2px; padding-bottom: 10px;">
+                                    LUGAR
+                                </td>
+                            </tr>
+                        </table>
+                        <h1 style="margin: 0 0 10px 0; font-size: 24px; font-weight: bold; color: #192534;">Hi John,</h1>
+                        <p style="margin: 0; font-size: 16px; line-height: 24px; color: #333333;">
+                            We found **3 properties that perfectly match your saved criteria** (3+ bedrooms, max $1.2M, with a pool). Take a look before they're gone!
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- SECTION 2: RECOMMENDATIONS HEADER -->
+                <tr>
+                    <td style="padding: 20px 30px; background-color: #f7fafc; font-family: Arial, sans-serif;">
+                        <h2 style="margin: 0; font-size: 20px; font-weight: bold; color: #192534; text-align: center; text-transform: uppercase;">
+                            Properties You May Like
+                        </h2>
+                    </td>
+                </tr>
+
+                <!-- SECTION 3: PROPERTY CARD 1 -->
+                <tr>
+                    <td style="padding: 0 30px; background-color: #ffffff; font-family: Arial, sans-serif;">
+                        <table class="property-card" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width: 540px; margin: 0 auto 25px auto; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                            <tr>
+                                <td class="card-image">
+                                    <a href="#" target="_blank">
+                                        <img src="https://placehold.co/540x300/192534/ffffff?text=Property+1" alt="Coastal Home" width="540" style="width: 100%; max-width: 540px; height: 300px; display: block; object-fit: cover;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card-content" style="padding: 20px; text-align: left;">
+                                    <p style="margin: 0 0 5px 0; font-size: 24px; font-weight: bold; color: #a0d4e4;">$1,150,000</p>
+                                    <p style="margin: 0 0 10px 0; font-size: 16px; color: #333333; font-weight: bold;">4 Bed | 3 Bath | 2,800 Sq. Ft.</p>
+                                    <p style="margin: 0 0 20px 0; font-size: 14px; color: #666666;">
+                                        **Location:** 45 Sunset Blvd, Miami, FL
+                                        <br>
+                                        *Features a large, newly renovated pool deck and smart home technology.*
+                                    </p>
+                                    
+                                    <!-- CTA Button -->
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tr>
+                                            <td align="center" style="border-radius: 6px; background-color: #192534; padding: 3px;">
+                                                <a href="#" target="_blank" style="font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; display: inline-block; padding: 10px 20px; border-radius: 4px;">
+                                                    VIEW PROPERTY
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- SECTION 4: PROPERTY CARD 2 -->
+                <tr>
+                    <td style="padding: 0 30px; background-color: #ffffff; font-family: Arial, sans-serif;">
+                        <table class="property-card" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width: 540px; margin: 0 auto 25px auto; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                            <tr>
+                                <td class="card-image">
+                                    <a href="#" target="_blank">
+                                        <img src="https://placehold.co/540x300/a0d4e4/192534?text=Property+2" alt="Family Home" width="540" style="width: 100%; max-width: 540px; height: 300px; display: block; object-fit: cover;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card-content" style="padding: 20px; text-align: left;">
+                                    <p style="margin: 0 0 5px 0; font-size: 24px; font-weight: bold; color: #a0d4e4;">$985,000</p>
+                                    <p style="margin: 0 0 10px 0; font-size: 16px; color: #333333; font-weight: bold;">3 Bed | 2 Bath | 2,100 Sq. Ft.</p>
+                                    <p style="margin: 0 0 20px 0; font-size: 14px; color: #666666;">
+                                        **Location:** 789 Lake View Dr, Orlando, FL
+                                        <br>
+                                        *Quiet cul-de-sac location with a charming sunroom and community amenities.*
+                                    </p>
+                                    
+                                    <!-- CTA Button -->
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tr>
+                                            <td align="center" style="border-radius: 6px; background-color: #192534; padding: 3px;">
+                                                <a href="#" target="_blank" style="font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; display: inline-block; padding: 10px 20px; border-radius: 4px;">
+                                                    VIEW PROPERTY
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- SECTION 5: PROPERTY CARD 3 -->
+                <tr>
+                    <td style="padding: 0 30px 30px 30px; background-color: #ffffff; font-family: Arial, sans-serif;">
+                        <table class="property-card" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width: 540px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                            <tr>
+                                <td class="card-image">
+                                    <a href="#" target="_blank">
+                                        <img src="https://placehold.co/540x300/cccccc/192534?text=Property+3" alt="Modern Condo" width="540" style="width: 100%; max-width: 540px; height: 300px; display: block; object-fit: cover;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card-content" style="padding: 20px; text-align: left;">
+                                    <p style="margin: 0 0 5px 0; font-size: 24px; font-weight: bold; color: #a0d4e4;">$1,050,000</p>
+                                    <p style="margin: 0 0 10px 0; font-size: 16px; color: #333333; font-weight: bold;">3 Bed | 2.5 Bath | 1,900 Sq. Ft.</p>
+                                    <p style="margin: 0 0 20px 0; font-size: 14px; color: #666666;">
+                                        **Location:** 101 Tower St, Downtown, FL
+                                        <br>
+                                        *Luxury high-rise unit with exclusive rooftop pool and gym access.*
+                                    </p>
+                                    
+                                    <!-- CTA Button -->
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tr>
+                                            <td align="center" style="border-radius: 6px; background-color: #192534; padding: 3px;">
+                                                <a href="#" target="_blank" style="font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; display: inline-block; padding: 10px 20px; border-radius: 4px;">
+                                                    VIEW PROPERTY
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- SECTION 6: FOOTER CTA & AGENT LINK -->
+                <tr>
+                    <td style="background-color: #f7fafc; padding: 30px 30px 40px 30px; text-align: center; font-family: Arial, sans-serif; border-radius: 0 0 8px 8px;">
+                        <p style="margin: 0 0 20px 0; font-size: 16px; line-height: 24px; color: #333333;">
+                            Don't see exactly what you're looking for?
+                        </p>
+                        
+                        <a href="#" style="font-size: 18px; font-weight: bold; color: #192534; text-decoration: none; display: inline-block; border-bottom: 2px solid #a0d4e4;">
+                            Adjust Your Preferences or Contact Agent
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- SECTION 7: LEGAL FOOTER -->
+                <tr>
+                    <td style="background-color: #192534; padding: 40px 30px; margin-top: 10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                            <tr>
+                                <!-- Col 1: LUGAR -->
+                                <td class="stack-column-center" valign="top" style="width: 25%; color: #ffffff; font-family: Arial, sans-serif; font-size: 13px; line-height: 20px; padding-bottom: 20px;">
+                                    <p style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; text-transform: uppercase;">LUGAR</p>
+                                    <p style="margin: 0; color: #a0aec0;">123 Anywhere St.</p>
+                                    <p style="margin: 0; color: #a0aec0;">(123) 456-7890</p>
+                                </td>
+                                <!-- Col 2: Quick Links -->
+                                <td class="stack-column-center" valign="top" style="width: 25%; color: #ffffff; font-family: Arial, sans-serif; font-size: 13px; line-height: 20px; padding-bottom: 20px;">
+                                    <p style="margin: 0 0 10px 0; font-weight: bold; color: #e2e8f0;">QUICK LINKS</p>
+                                    <a href="#" style="color: #a0aec0; text-decoration: none; display: block;">About</a>
+                                    <a href="#" style="color: #a0aec0; text-decoration: none; display: block;">Contact</a>
+                                </td>
+                                <!-- Col 3: Legal -->
+                                 <td class="stack-column-center" valign="top" style="width: 25%; color: #ffffff; font-family: Arial, sans-serif; font-size: 13px; line-height: 20px; padding-bottom: 20px;">
+                                    <p style="margin: 0 0 10px 0; font-weight: bold; color: #e2e8f0;">LEGAL</p>
+                                    <a href="#" style="color: #a0aec0; text-decoration: none; display: block;">Privacy</a>
+                                    <a href="#" style="color: #a0aec0; text-decoration: none; display: block;">Terms</a>
+                                </td>
+                                <!-- Col 4: Social -->
+                                <td class="stack-column-center" valign="top" style="width: 25%; color: #ffffff; font-family: Arial, sans-serif; font-size: 13px; line-height: 20px; padding-bottom: 20px;">
+                                    <p style="margin: 0 0 10px 0; font-weight: bold; color: #e2e8f0;">SOCIAL</p>
+                                    <a href="#" style="color: #a0aec0; text-decoration: none; display: block;">Twitter</a>
+                                    <a href="#" style="color: #a0aec0; text-decoration: none; display: block;">Instagram</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; border-top: 1px solid #4a5568; margin-top: 20px;">
+                            <tr>
+                                <td style="padding-top: 20px; text-align: center; font-family: Arial, sans-serif; font-size: 12px; color: #a0aec0;">
+                                    You are receiving this email because you opted in. <a href="#" style="color: #a0aec0;">Unsubscribe</a>.
+                                    <br><br>
+                                    Copyright © 2025 Lugar Inc. All rights reserved.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+            <!-- END MAIN TABLE WRAPPER -->
+        </div>
+        <!--[if mso | IE]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </center>
+</body>
+</html>
